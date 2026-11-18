@@ -1,0 +1,20 @@
+name: 事例や情報の相談
+description: こんな事例が知りたい、ここが分からない、を書く
+title: "【相談】"
+body:
+  - type: textarea
+    id: want
+    attributes:
+      label: 知りたいこと
+      description: 業務の名前と、何に困っているかを書いてください。
+    validations:
+      required: true
+  - type: input
+    id: area
+    attributes:
+      label: 地域や自治体の規模
+      description: 例として、新潟県の人口 3 万人の町、のように書いてください。書きたくなければ空でかまいません。
+  - type: textarea
+    id: tried
+    attributes:
+      label: すでに試したこと

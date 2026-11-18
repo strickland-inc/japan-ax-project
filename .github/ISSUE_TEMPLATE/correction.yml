@@ -1,0 +1,21 @@
+name: 誤りの指摘
+description: 事例や資料の間違いを知らせる
+title: "【訂正】"
+body:
+  - type: input
+    id: target
+    attributes:
+      label: 対象のファイル
+      description: 例として、cases/niigata/nagaoka/事例名.md のように書いてください。
+    validations:
+      required: true
+  - type: textarea
+    id: wrong
+    attributes:
+      label: どこがどう違うか
+    validations:
+      required: true
+  - type: textarea
+    id: source
+    attributes:
+      label: 正しい内容の出典
